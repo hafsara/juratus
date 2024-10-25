@@ -1,1 +1,32 @@
-<p>create-form works!</p>
+<div class="create-form">
+  <h2>Créer un nouveau formulaire</h2>
+
+  <!-- Titre du formulaire -->
+  <label for="formTitle">Titre du formulaire :</label>
+  <input type="text" id="formTitle" [(ngModel)]="formTitle" placeholder="Entrez un titre pour le formulaire">
+
+  <div>
+    <h3>Champs du formulaire</h3>
+
+    <!-- Ajouter un champ texte -->
+    <button (click)="addField('text')">Ajouter champ texte</button>
+
+    <!-- Ajouter un champ de type checkbox -->
+    <button (click)="addField('checkbox')">Ajouter checkbox</button>
+
+    <div *ngFor="let field of fields; let i = index">
+      <div *ngIf="field.type === 'text'">
+        <label>Champ texte {{i + 1}} :</label>
+        <input type="text" [(ngModel)]="field.value" placeholder="Entrez une valeur">
+      </div>
+
+      <div *ngIf="field.type === 'checkbox'">
+        <label>Checkbox {{i + 1}} :</label>
+        <input type="checkbox" [(ngModel)]="field.value"> Coché
+      </div>
+    </div>
+  </div>
+
+  <!-- Bouton pour soumettre le formulaire -->
+  <button (click)="submitForm()">Soumettre le formulaire</button>
+</div>
