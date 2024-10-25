@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { CreateFormComponent } from './create-form/create-form.component';
-import { FormListComponent } from './form-list/form-list.component';
-import { FormDetailComponent } from './form-detail/form-detail.component';
+import { CreateFormComponent } from './components/create-form/create-form.component';
+import { FormListComponent } from './components/form-list/form-list.component';
+import { FormDetailComponent } from './components/form-detail/form-detail.component';
 
 @NgModule({
   declarations: [
