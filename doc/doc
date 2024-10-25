@@ -13,6 +13,8 @@ ng new form-management-app
 cd form-management-app
 pip install Flask-CORS
 
+ng new test-frontend --no-standalone
+
 
 root@Ubunto24:/home/work/juratus/frontend# ng serve
 Application bundle generation failed. [16.774 seconds]
