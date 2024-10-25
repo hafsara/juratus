@@ -1,0 +1,7 @@
+<h2>{{ form.title }}</h2>
+<ul>
+  <li *ngFor="let field of form.fields">
+    {{ field.type }}: <input [(ngModel)]="field.value" />
+  </li>
+</ul>
+<button (click)="submitResponse()">Submit Response</button>
