@@ -1,0 +1,13 @@
+pip install flask-restx
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+.\venv\Scripts\activate    # Windows
+pip install Flask SQLAlchemy Flask-Migrate Authlib psycopg2-binary
+
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade
+
+
+ng new form-management-app
+cd form-management-app
