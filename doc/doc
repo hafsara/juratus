@@ -11,3 +11,4 @@ flask db upgrade
 
 ng new form-management-app
 cd form-management-app
+pip install Flask-CORS

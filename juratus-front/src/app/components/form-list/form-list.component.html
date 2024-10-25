@@ -1,1 +1,7 @@
-<p>form-list works!</p>
+<h2>Form List</h2>
+<ul>
+  <li *ngFor="let form of forms">
+    {{ form.title }}
+    <a [routerLink]="['/form', form.id]">View Details</a>
+  </li>
+</ul>

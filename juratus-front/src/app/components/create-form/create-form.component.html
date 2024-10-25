@@ -1,1 +1,16 @@
-<p>create-form works!</p>
+<h2>Create a new form</h2>
+<label for="formTitle">Form Title:</label>
+<input [(ngModel)]="formTitle" placeholder="Enter form title">
+
+<h3>Add Fields</h3>
+<button (click)="addField('text')">Add Text Field</button>
+<button (click)="addField('checkbox')">Add Checkbox</button>
+
+<ul>
+  <li *ngFor="let field of fields">
+    <span>{{ field.type }}</span>
+    <input type="text" [(ngModel)]="field.value" placeholder="Enter field value">
+  </li>
+</ul>
+
+<button (click)="submitForm()">Submit Form</button>
