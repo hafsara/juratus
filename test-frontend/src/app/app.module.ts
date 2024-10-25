@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';  // Assure-toi d'importer FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,8 @@ import { CreateFormComponent } from './create-form/create-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule  // Assure-toi que FormsModule est bien dans les imports
   ],
   providers: [],
   bootstrap: [AppComponent]

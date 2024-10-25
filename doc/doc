@@ -7,60 +7,10 @@ pip install Flask SQLAlchemy Flask-Migrate Authlib psycopg2-binary
 flask db init
 flask db migrate -m "Initial migration"
 flask db upgrade
+pip install Flask-CORS
 
 
 ng new form-management-app
 cd form-management-app
-pip install Flask-CORS
 
 ng new test-frontend --no-standalone
-
-
-root@Ubunto24:/home/work/juratus/frontend# ng serve
-Application bundle generation failed. [16.774 seconds]
-
-✘ [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
-
-    src/app/app.module.server.ts:9:4:
-      9 │     AppModule,
-        ╵     ~~~~~~~~~
-
-
-✘ [ERROR] TS-996001: The class 'FormDetailComponent' is listed in the declarations of the NgModule 'AppModule', but is not a directive, a component, or a pipe. Either remove it from the NgModule's declarations, or add an appropriate Angular decorator. [plugin angular-compiler]
-
-    src/app/app.module.ts:13:4:
-      13 │     FormDetailComponent
-         ╵     ~~~~~~~~~~~~~~~~~~~
-
-  'FormDetailComponent' is declared here.
-
-    src/app/components/form-detail/form-detail.component.ts:10:13:
-      10 │ export class FormDetailComponent implements OnInit {
-         ╵              ~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module '../services/form.service' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/components/form-detail/form-detail.component.ts:3:28:
-      3 │ import { FormService } from '../services/form.service';
-        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS-992003: No suitable injection token for parameter 'formService' of class 'FormDetailComponent'.
-  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
-
-    src/app/components/form-detail/form-detail.component.ts:15:12:
-      15 │     private formService: FormService
-         ╵             ~~~~~~~~~~~
-
-  This type does not have a value, so it cannot be used as injection token.
-
-    src/app/components/form-detail/form-detail.component.ts:15:25:
-      15 │     private formService: FormService
-         ╵                          ~~~~~~~~~~~
-
-
-✘ [ERROR] TS7006: Parameter 'data' implicitly has an 'any' type. [plugin angular-compiler]
-
-    src/app/components/form-detail/form-detail.component.ts:20:50:
-      20 │     this.formService.getFormDetails(id).subscribe(data => {
