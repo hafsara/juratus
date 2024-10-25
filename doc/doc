@@ -12,3 +12,48 @@ flask db upgrade
 ng new form-management-app
 cd form-management-app
 pip install Flask-CORS
+
+
+✘ [ERROR] NG8001: 'app-create-form' is not a known element:
+1. If 'app-create-form' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-create-form' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:2:0:
+      2 │ <app-create-form></app-create-form>
+        ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-form-list' is not a known element:
+1. If 'app-form-list' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-form-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:3:0:
+      3 │ <app-form-list></app-form-list>
+        ╵ ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-form-detail' is not a known element:
+1. If 'app-form-detail' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-form-detail' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:4:0:
+      4 │ <app-form-detail></app-form-detail>
+        ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
